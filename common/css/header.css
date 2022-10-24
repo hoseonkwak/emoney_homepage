@@ -1,39 +1,77 @@
 /* header */
 aside.mobile_menu{display: none;}
 header {position: fixed; top: 0; left: 0; z-index: 9999; width: 100%; background: rgba(255,255,255,0.9);}
-header .header_wrap {position: relative; max-width: 1200px; width: 100%; height: 70px; margin: 0 auto;}
-header .header_wrap .logo{position: absolute;	top: 50%; left: 0; margin-top: -27px;}
-header .header_wrap .logo a{position: relative;	width: 87px; display: block; height: 50px; background: url(//img.x1.co.kr/emoney/common/logo_emoney.png) center no-repeat; background-size: contain;}
-header .header_wrap nav{position: absolute; bottom: 0; right: 0;}
-header .header_wrap nav .header_menu li{position: relative; float: left; font-size: 16px; text-align: center; width: 130px;}
-header .header_wrap nav .header_menu li.depth1{position: relative; float: left; font-size: 16px; text-align: center; width: 130px; font-weight: bold;}
-header .header_wrap nav .header_menu li.depth1 > a{display:block; line-height: 70px;}
-header .header_wrap nav .header_menu > li.depth1 > a::after{content: ''; position: absolute; left: 0; bottom: 0; height: 3px; width: 0; opacity: 0; background-color: #a9071b; transition: all .3s ease-in-out;}
+header .header_wrap {position: relative; max-width: 1200px; width: 100%; height: 70px; margin: 0 auto; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center;}
+header .header_wrap .logo{position: relative;	width: 87px; height: 50px;}
+header .header_wrap .logo a{display: block; width: 100%; height: 100%; background: url(../img/ci/contents&service/emoney.png) center no-repeat; background-size: contain;}
+header .header_wrap nav .header_menu{display: -webkit-box;display: -ms-flexbox;display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center;}
+header .header_wrap nav .header_menu li{position: relative; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; font-size: 16px; text-align: center; width: 130px;}
+header .header_wrap nav .header_menu li.depth1{position: relative; text-align: center; width: 130px; height: 70px; font-weight: bold;}
+header .header_wrap nav .header_menu li.depth1 > a{display:block;}
+header .header_wrap nav .header_menu > li.depth1 > a::after{content: ''; position: absolute; left: 0; bottom: 0; height: 3px; width: 0; opacity: 0; background-color: #a9071b; -webkit-transition: all .3s ease-in-out; -o-transition: all .3s ease-in-out; transition: all .3s ease-in-out;}
 header .header_wrap nav .header_menu > li.depth1 > a:hover:after{width: 100%; opacity: 1;}
-header .header_wrap nav .header_menu li.depth1 .depth2_bg{position: absolute; height: 120px; top: 70px; left: 0; right: 0; background-color: #fff; padding-bottom: 40px; display: none;	transition: .3s ease-in-out;}
-header .header_wrap nav .header_menu li.depth1 .depth2_bg .depth2{position: absolute; width: 300%; height: 100%;}
+header .header_wrap nav .header_menu li.depth1 .depth2_bg{position: absolute; height: 120px; top: 70px; left: 0; right: 0; background-color: #fff; padding-bottom: 40px; display: none;	-webkit-transition: .3s ease-in-out;	-o-transition: .3s ease-in-out;	transition: .3s ease-in-out;}
+header .header_wrap nav .header_menu li.depth1 .depth2_bg .depth2{position: absolute; width: 300%; height: 100%; display: -webkit-box; display: -ms-flexbox; display: flex;}
 header .header_wrap nav .header_menu li.depth1:nth-child(2) .depth2_bg .depth2{left: -100%;}
 header .header_wrap nav .header_menu li.depth1:nth-child(3) .depth2_bg .depth2{left: -200%;}
-header .header_wrap nav .header_menu li.depth1.open .depth2_bg{display: block; transition: .3s ease-in-out;}
+header .header_wrap nav .header_menu li.depth1.open .depth2_bg{display: block; -webkit-transition: .3s ease-in-out; -o-transition: .3s ease-in-out; transition: .3s ease-in-out;}
 header .header_wrap nav .m_menu{display: none;}
-header .depth2_bg .depth2 > li{	border-top: 1px solid #eee;	float: left; width: 130px;}
-header .depth2_bg >.depth2::before{content: ''; position: absolute;	left: -397%; top: 0; width: 400%; height: 120px; background: #fff; border-top: 1px solid #eee; z-index: -1; box-shadow: 0px 3px 4px -4px grey;}
-header .depth2_bg >.depth2::after{content: ''; position: absolute; right: -300%; top: 0; width: 400%; height: 120px; background: #fff; border-top: 1px solid #eee; z-index: -1; box-shadow: 0px 3px 4px -4px grey;}
-header .depth2_bg .depth2 li .depth2_list > li{float: left; width: 130px; height: 50px; line-height: 50px; padding: 0; font-weight: 400; position: relative;}
+header .depth2_bg .depth2 > li{	border-top: 1px solid #eee; width: 130px;}
+header .depth2_bg >.depth2::before{content: ''; position: absolute;	left: -397%; top: 0; width: 400%; height: 120px; background: #fff; border-top: 1px solid #eee; z-index: -1; -webkit-box-shadow: 0px 3px 4px -4px grey; box-shadow: 0px 3px 4px -4px grey;}
+header .depth2_bg >.depth2::after{content: ''; position: absolute; right: -300%; top: 0; width: 400%; height: 120px; background: #fff; border-top: 1px solid #eee; z-index: -1; -webkit-box-shadow: 0px 3px 4px -4px grey; box-shadow: 0px 3px 4px -4px grey;}
+header .depth2_bg .depth2 li .depth2_list{display: -webkit-box;display: -ms-flexbox;display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column;}
+header .depth2_bg .depth2 li .depth2_list > li{height: 50px; padding: 0; font-weight: 400; position: relative;}
 header .depth2_bg .depth2 li .depth2_list > li > a{display: block; }
 /* header .depth2_bg .depth2 li .depth2_list > li >a:hover:after{content: ''; display: block; width: 10px; height: 3px; background: #a9071b; position: absolute; left: 50%; top: 40px; transform: translateX(-50%); border-radius: 100%; z-index: 9999; } */
 header .depth2_bg .depth2 li .depth2_list > li >a:hover{color: #a9071b;}
 
 /* 메뉴버튼 */
 header .header_wrap nav .header_menu li.menu{width: 70px; height: 70px;}
-.header_menu li.menu > .menu_btn{position: absolute; top: 50%; left: 50%; transform:translate(-50%, -50%); width: 21px; height: 24px;}
-.header_menu li.menu > .menu_btn i{position: absolute; top: 50%; left: 50%; font-size: 1.5rem; cursor: pointer; transition: all 0.3s;}
-.header_menu li.menu > .menu_btn i#open{display: block; transform:translate(-50%, -50%) rotateY(0); opacity: 1;}
-.header_menu li.menu > .menu_btn i#close{display: block; transform:translate(-50%, -50%) rotateY(180deg); opacity: 0;}
-.header_menu li.menu > .menu_btn.on i#open{display: block; transform:translate(-50%, -50%) rotateY(0); opacity: 0;}
-.header_menu li.menu > .menu_btn.on i#close{display: block; transform:translate(-50%, -50%) rotateY(180deg); opacity: 1;}
-.header_menu li.menu .depth2_bg{position: absolute; width: 130px; height: 120px; top: 70px; left: 0; right: 0; padding-bottom: 40px; display: none;	transition: .3s ease-in-out;}
-.header_menu li.menu .depth2_bg .depth2{position: absolute; width: 300%; height: 100%;}
+.header_menu li.menu > .menu_btn{position: absolute; top: 50%; left: 50%; -webkit-transform:translate(-50%, -50%); -ms-transform:translate(-50%, -50%); transform:translate(-50%, -50%); width: 21px; height: 24px;}
+.header_menu li.menu > .menu_btn i{position: absolute; top: 50%; left: 50%; font-size: 1.5rem; cursor: pointer; -webkit-transition: all 0.3s; -o-transition: all 0.3s; transition: all 0.3s;}
+.header_menu li.menu > .menu_btn i#open{display: block; -webkit-transform:translate(-50%, -50%) rotateY(0); transform:translate(-50%, -50%) rotateY(0); opacity: 1;}
+.header_menu li.menu > .menu_btn i#close{display: block; -webkit-transform:translate(-50%, -50%) rotateY(180deg); transform:translate(-50%, -50%) rotateY(180deg); opacity: 0;}
+.header_menu li.menu > .menu_btn.on i#open{display: block; -webkit-transform:translate(-50%, -50%) rotateY(0); transform:translate(-50%, -50%) rotateY(0); opacity: 0;}
+.header_menu li.menu > .menu_btn.on i#close{display: block; -webkit-transform:translate(-50%, -50%) rotateY(180deg); transform:translate(-50%, -50%) rotateY(180deg); opacity: 1;}
+.header_menu li.menu .depth2_bg{position: absolute; width: 130px; height: 120px; top: 70px; left: 0; right: 0; padding-bottom: 40px; display: none;	-webkit-transition: .3s ease-in-out;	-o-transition: .3s ease-in-out;	transition: .3s ease-in-out;}
+.header_menu li.menu .depth2_bg .depth2{position: absolute; width: 300%; height: 100%; display: -webkit-box; display: -ms-flexbox; display: flex;}
 .header_menu li.menu:nth-child(2) .depth2_bg .depth2{left: -100%;}
 .header_menu li.menu:nth-child(3) .depth2_bg .depth2{left: -200%;}
-.header_menu li.menu.open .depth2_bg{display: block; transition: .3s ease-in-out;}
+.header_menu li.menu.open .depth2_bg{display: block; -webkit-transition: .3s ease-in-out; -o-transition: .3s ease-in-out; transition: .3s ease-in-out;}
+
+/* ==================================== 반응형 ==================================== */
+/* 태블릿 */
+@media all and (min-width:601px) and (max-width:1024px) {
+  header{background: #fff; height: 8vw; padding: 1vw 0;}
+	/* header.scrolled{border-bottom: none;} */
+	header .header_wrap{height: 100%;}
+	header .header_wrap .logo{left: 4%; -webkit-transition: all .9s cubic-bezier(0.1, 0.21, 0.03, 1.01); -o-transition: all .9s cubic-bezier(0.1, 0.21, 0.03, 1.01); transition: all .9s cubic-bezier(0.1, 0.21, 0.03, 1.01);}
+	header .header_wrap .logo a{background: url(../img/ci/contents&service/emoney.png) center no-repeat; background-size: contain;}
+	header .header_wrap nav .header_menu{display: none;}
+	header .header_wrap nav{position: relative; width: 8vw; height: 100%;}
+	header .header_wrap nav .m_menu{display: block; position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); width: 3vw; height: 3vw;}
+	header .header_wrap nav .m_menu li{width: 100%; height: 100%;}
+	header .header_wrap nav .m_menu li .menu_btn{position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); width: 100%; height: 100%; cursor: pointer;}
+	header .header_wrap nav .m_menu li .menu_btn .open1{position: absolute; top: 50%; -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%); width: 100%; height: 3px; background: #000; border-radius: 2px;}
+	header .header_wrap nav .m_menu li .menu_btn .open2{position: absolute; top: 8%; width: 100%; height: 3px; background: #000; border-radius: 2px;}
+	header .header_wrap nav .m_menu li .menu_btn .open3{position: absolute; bottom: 8%; width: 100%; height: 3px; background: #000; border-radius: 2px;}
+}
+
+/* 모바일 */
+@media all and (max-width:600px) {
+  /* header */
+	header{background: #fff; height: 14vw;}
+	header.scrolled{border-bottom: none;}
+	header.scrolled .header_wrap .logo a {width:70px}
+	header .header_wrap{height: 8vw; margin: 3vw 0;}
+	header .header_wrap .logo{left: 5%; -webkit-transition: all .9s cubic-bezier(0.1, 0.21, 0.03, 1.01); -o-transition: all .9s cubic-bezier(0.1, 0.21, 0.03, 1.01); transition: all .9s cubic-bezier(0.1, 0.21, 0.03, 1.01);}
+	header .header_wrap .logo a{background: url(../img/ci/contents&service/emoney.png) center no-repeat; background-size: contain; width:70px }
+	header .header_wrap nav .header_menu{display: none;}
+	header .header_wrap nav{position: relative; width: 10vw; height: 100%; right: 2vw;}
+	header .header_wrap nav .m_menu{display: block; position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); width: 5vw; height: 5vw;}
+	header .header_wrap nav .m_menu li{width: 100%; height: 100%;}
+	header .header_wrap nav .m_menu li .menu_btn{position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); width: 100%; height: 100%;}
+	header .header_wrap nav .m_menu li .menu_btn .open1{position: absolute; top: 50%; -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%); width: 100%; height: 2px; background: #000; border-radius: 2px;}
+	header .header_wrap nav .m_menu li .menu_btn .open2{position: absolute; top: 8%; width: 100%; height: 2px; background: #000; border-radius: 2px;}
+	header .header_wrap nav .m_menu li .menu_btn .open3{position: absolute; bottom: 8%; width: 100%; height: 2px; background: #000; border-radius: 2px;}
+}
