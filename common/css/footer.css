@@ -1,0 +1,13 @@
+footer{position: relative; width: 100%; height: auto; color: #787878; margin-top: 40px;}
+footer .footer_border{position: relative; top: 20%;}
+footer .footer_inner{position: relative; max-width: 1200px; width: 90%; margin: 0 auto; border-top: 1px solid #333;}
+footer .footer_inner h1{position: absolute; left: 0; top: 30%; width: 200px; height: 49px; text-align: center;}
+footer .footer_inner h1 img{height:85%;}
+footer .footer_inner address{float: right; width: 83%; height: 100%; padding: 50px 0 60px; font-style: normal; font-size: 14px; font-weight: 500;}
+footer .footer_inner address span{position: relative; padding: 0 8px;}
+footer .footer_inner address span.first{padding-left: 0;}
+footer .footer_inner address span::after{content: ''; position: absolute; left: 0; top: 50%; transform: translateY(-50%); width: 1px; height: 14px; background: #787878;}
+footer .footer_inner address span.first::after{content: unset;}
+footer .footer_inner p.copy{font-size: 14px; margin-top: 20px;}
+footer .footer_inner address .pc_br{display: block;}
+footer .footer_inner address .m_br{display:inline-block;}

@@ -1,0 +1,53 @@
+/* header */
+aside.mobile_menu{display: none;}
+header {position: fixed; top: 0; left: 0; z-index: 9999; width: 100%; color: rgba(255, 255, 255, 0.7); transition: none;}
+header.scrolled {position: fixed; top: 0; left: 0; z-index: 9999; width: 100%; color: #000; border-bottom: 1px solid #eee;}
+header .header_wrap {position: relative; max-width: 1200px;	width: 100%; height: 70px; margin: 0 auto;}
+header .header_wrap .logo{position: absolute; top: 50%; left: 0; margin-top: -27px;}
+header .header_wrap .logo a{position: relative; width: 87px; display: block; height: 50px; background: url(//img.x1.co.kr/emoney/ill_about/logo_w.png) center no-repeat; background-size: contain;  transition: none;}
+header .header_wrap nav{position: absolute; bottom: 0; right: 0; transition: none;}
+header .header_wrap nav ul{line-height: 70px; transition: none;}
+header .header_wrap nav .header_menu li{position: relative; float: left; font-size: 16px; text-align: center; width: 130px; transition: none;}
+header .header_wrap nav .header_menu li > a{display:block; transition: none;}
+header .header_wrap nav .header_menu > li.depth1 > a::after{content: ''; position: absolute; left: 0; bottom: 0; height: 3px;	width: 0;	opacity: 0;	background-color: #fff; transition: all .3s ease-in-out;}
+header .header_wrap nav .header_menu > li.depth1 > a:hover:after{width: 100%;	opacity: 1;}
+header .header_wrap nav .header_menu li.depth1 .depth2_bg{position: absolute; height: 120px; top: 70px; left: 0; right: 0; padding-bottom: 40px; display: none;}
+header .header_wrap nav .header_menu li.depth1 .depth2_bg .depth2{position: absolute; width: 300%; height: 100%;}
+header .header_wrap nav .header_menu li.depth1:nth-child(2) .depth2_bg .depth2{left: -100%;}
+header .header_wrap nav .header_menu li.depth1:nth-child(3) .depth2_bg .depth2{left: -200%;}
+header .header_wrap nav .header_menu li.depth1.open .depth2_bg{display: block; transition: .3s ease-in-out; background: none;}
+header .header_wrap nav .m_menu{display: none;}
+header .depth2_bg .depth2 > li{border-top: 1px solid rgba(255, 255, 255, 0); float: left; width: 130px;}
+header .depth2_bg >.depth2::before{content: ''; position: absolute; right: -100%; top: 0; width: 800%; height: 120px; background: rgba(255, 255, 255, 0.3); border-top: 1px solid rgba(255, 255, 255, 0.3); z-index: -1; box-shadow: 0px 3px 4px -3px #eee; transition: none;}
+/*header .depth2_bg >.depth2::after{content: ''; position: absolute; left: 0%; top: 0; width: 500%; height: 120px; background: rgba(255, 255, 255, 0.3); border-top: 1px solid rgba(255, 255, 255, 0.3); z-index: -1; box-shadow: 2px 2px 4px 0px #ddd; transition: none;}*/
+header .depth2_bg .depth2 li .depth2_list > li{ float: left; width: 130px; height: 50px; line-height: 50px; padding: 0; font-weight: 400; position: relative; }
+header .depth2_bg .depth2 li .depth2_list > li > a{display: block; }
+/* header .depth2_bg .depth2 li .depth2_list > li >a:hover:after{content: ''; display: block; width: 10px; height: 3px; background: #a9071b; position: absolute; left: 50%; top: 40px; transform: translateX(-50%); border-radius: 100%; z-index: 9999; } */
+header .depth2_bg .depth2 li .depth2_list > li >a:hover{color: #fff; font-weight: 500;}
+header .header_wrap nav .header_menu > li.depth1 > a:hover,
+header .header_wrap nav .header_menu li.menu > .menu_btn:hover{color: #fff;}
+header .header_wrap nav .header_menu li.depth1.open > a:hover,
+header .header_wrap nav .header_menu li.menu.open > .menu_btn:hover{color: #fff;}
+header.scrolled .header_wrap .logo a{position: relative; width: 87px; display: block; height: 50px; background: url(//img.x1.co.kr/emoney/common/logo_emoney.png) center no-repeat; background-size: contain;}
+header.scrolled .depth2_bg >.depth2::before{content: ''; position: absolute; right: -100%; top: 0; width: 800%; height: 120px; background: #fff; border-top: 1px solid #eee; z-index: -1; border-bottom: 1px solid #ddd;}
+/*header.scrolled .depth2_bg >.depth2::after{content: ''; position: absolute; left: 0%; top: 0; width: 500%; height: 120px; background: #fff; border-top: 1px solid #eee; z-index: -1; border-bottom: 1px solid #ddd;}*/
+header.scrolled .depth2_bg .depth2 li .depth2_list > li >a:hover{color: #a9071b;}
+header.scrolled .header_wrap nav .header_menu > li.depth1 > a:hover,
+header.scrolled .header_wrap nav .header_menu li.menu > .menu_btn:hover{color: #000;}
+header.scrolled .header_wrap nav .header_menu > li.depth1 > a::after{content: ''; position: absolute; left: 0; bottom: 0; height: 3px;	width: 0;	opacity: 0;	background-color: #a9071b; transition: all .3s ease-in-out;}
+header.scrolled .header_wrap nav .header_menu > li.depth1 > a:hover:after{width: 100%;	opacity: 1;}
+header.scrolled .header_wrap nav .header_menu li.depth1.open > a:hover,
+header.scrolled .header_wrap nav .header_menu li.menu.open > .menu_btn:hover{color: #000;}
+/* 메뉴버튼 */
+header .header_wrap nav .header_menu li.menu{width: 70px; height: 70px; transition: none;}
+header .header_wrap nav .header_menu li.menu > .menu_btn{position: absolute; top: 50%; left: 50%; transform:translate(-50%, -50%); width: 21px; height: 24px; transition: none;}
+header .header_wrap nav .header_menu li.menu > .menu_btn i{position: absolute; top: 50%; left: 50%; font-size: 1.5rem; cursor: pointer; transition: all 0.3s;}
+header .header_wrap nav .header_menu li.menu > .menu_btn i#open{display: block; transform:translate(-50%, -50%) rotateY(0); opacity: 1; transition: none;}
+header .header_wrap nav .header_menu li.menu > .menu_btn i#close{display: block; transform:translate(-50%, -50%) rotateY(180deg); opacity: 0;}
+header .header_wrap nav .header_menu li.menu > .menu_btn.on i#open{display: block; transform:translate(-50%, -50%) rotateY(0); opacity: 0;}
+header .header_wrap nav .header_menu li.menu > .menu_btn.on i#close{display: block; transform:translate(-50%, -50%) rotateY(180deg); opacity: 1;}
+header .header_wrap nav .header_menu li.menu .depth2_bg{position: absolute; width: 130px; height: 120px; top: 70px; left: 0; right: 0; padding-bottom: 40px; display: none;	transition: .3s ease-in-out;}
+header .header_wrap nav .header_menu li.menu .depth2_bg .depth2{position: absolute; width: 300%; height: 100%;}
+header .header_wrap nav .header_menu li.menu:nth-child(2) .depth2_bg .depth2{left: -100%;}
+header .header_wrap nav .header_menu li.menu:nth-child(3) .depth2_bg .depth2{left: -200%;}
+header .header_wrap nav .header_menu li.menu.open .depth2_bg{display: block; transition: .3s ease-in-out;}
