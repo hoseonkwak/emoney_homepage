@@ -6,24 +6,21 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>eMoney</title>
-  <link rel="icon" type="image/ico" href="//img.x1.co.kr/favicon/emoney.ico">
-
-  <!-- script -->
-  <script src="//code.jquery.com/jquery-1.12.4.min.js"></script>
-  <script type="text/javascript" src="//img.x1.co.kr/common/js/slick.min.js"></script>
-  <script src="./common/js/header.js"></script>
-  <!-- <script defer src="./common//js/main.js"></script> -->
-  <script src="./common/js/include_html.js"></script>
-
-  <!-- <script>
-    $(function () {
-      $('header').load('./common/html/header.html');
-    });
-  </script> -->
+  <!-- <link rel="icon" type="image/ico" href="//img.x1.co.kr/favicon/emoney.ico"> -->
 
   <!-- jQuery -->
   <script src="//code.jquery.com/jquery-1.12.4.min.js"></script>
   <script src='//cdnjs.cloudflare.com/ajax/libs/snap.svg/0.5.0/snap.svg-min.js'></script>
+
+  <!-- script -->
+  <script src="./common/js/header.js"></script>
+  <script src="./common/js/include_html.js"></script>
+  <script defer src="./common//js/main.js"></script>
+
+  <!-- slick -->
+  <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
 
   <!-- Swiper JS -->
   <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
@@ -62,7 +59,147 @@
   <!-- 헤더 -->
   <header html-include="./common/html/header.html"></header>
   <!-- wrap -->
+  <div class="wrap">
+    <!--  메인  -->
+    <div class="main">
+      <div class="bn_wrap inner">
+        <div class="txt_wrap">
+          <div class="txt_inner">
+            같이의 가치,
+            <p>투자의 길을<br>안내하다</p>
+            <div class="main_menu">
+              <ul>
+                <li class="on"><a href="/emoney_homepage/about.html">회사 소개</a></li>
+                <li><a href="/emoney_homepage/recruit.html">채용 소개</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="svg_wrap">
+          <div class="svg_inner">
+            <!-- circle1 -->
+            <svg id="svg1" viewBox="0 0 814 579" fill="none" xmlns="//www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="paint0_linear" x1="333" y1="-104" x2="333" y2="534" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#ED3B4B" />
+                  <stop offset="1" stop-color="#EC2424" />
+                </linearGradient>
+              </defs>
+              <path id="circle1"
+                d="M774.5 228C809 380 639.5 486.571 467.5 522.5C317.5 553.833 159.35 511.685 86.5 434C13.8232 356.5 -20.1767 232.089 13.8233 123.089C43.7682 27.0892 127.017 -9.87924 230.017 2.58925C325.017 14.0893 363.862 56.2167 447 85.5C570.5 129 741.738 83.6562 774.5 228Z"
+                fill="url(#paint0_linear)" />
+              <path opacity="0" id="circle2"
+                d="M739.5 231.5C771 355 669.5 484 567.5 541C473.379 593.597 175 684.5 69 574.5C-13.3911 489 -11.5001 340.5 22.4999 231.5C52.4448 135.5 110.375 50.6387 209.5 20C292 -5.50008 425.5 -5.81064 521 20C576.5 34.9999 704.302 93.4998 739.5 231.5Z"
+                fill="url(#paint0_linear)" />
+            </svg>
+            <!-- circle2 -->
+            <svg id="svg2" viewBox="0 0 814 579" fill="none" xmlns="//www.w3.org/2000/svg">
+              <path id="circle3"
+                d="M773.525 228.463C790.666 303.982 757.174 368.272 697.794 418.253C638.394 468.25 553.188 503.821 467.296 521.763C392.447 537.398 315.56 534.699 248.304 518.402C181.035 502.101 123.482 472.217 87.2294 433.558C14.7832 356.304 -19.108 232.263 14.7779 123.629C29.6768 75.8643 57.8094 42.8425 94.9899 23.2903C132.192 3.72652 178.537 -2.39359 229.897 3.8237C277.249 9.5558 310.599 22.9156 342.518 38.516C350.526 42.4303 358.453 46.4902 366.492 50.6081C390.482 62.8957 415.478 75.6991 446.668 86.6849C477.652 97.5982 511.601 102.93 545.546 107.053C554.336 108.121 563.123 109.107 571.859 110.088C596.896 112.899 621.512 115.662 644.586 120.157C675.697 126.218 703.863 135.404 726.279 152.002C748.664 168.577 765.384 192.594 773.525 228.463Z"
+                stroke="#ED3B4B" stroke-width="2" />
+              <path id="circle4"
+                d="M738.531 231.747C754.193 293.151 736.809 355.995 702.714 410.658C668.62 465.322 617.871 511.706 567.012 540.127C520.069 566.36 422.06 602.201 322.55 617.736C272.802 625.502 222.731 628.185 178.51 622.078C134.283 615.97 96.0068 601.085 69.7201 573.806C28.7312 531.271 8.66217 473.014 3.0992 411.722C-2.46346 350.433 6.48799 286.191 23.4545 231.798C53.3483 135.962 111.11 51.4581 209.795 20.9554C292.092 -4.48197 425.398 -4.80234 520.739 20.9654C576.106 35.9293 703.466 94.2692 738.531 231.747Z"
+                stroke="#ED3B4B" stroke-width="2" />
+            </svg>
+            <!-- circle3 -->
+            <svg id="svg3" viewBox="0 0 814 579" fill="none" xmlns="//www.w3.org/2000/svg">
+              <path id="circle5"
+                d="M774.5 228.242C809 380.242 639.5 486.813 467.5 522.742C317.5 554.075 159.35 511.927 86.5 434.242C13.8232 356.742 -20.1767 232.331 13.8233 123.331C43.7682 27.3309 127.017 -9.63755 230.017 2.83095C325.017 14.331 363.862 56.4584 447 85.7417C570.5 129.242 741.738 83.8979 774.5 228.242Z"
+                fill="#FDEBED" />
+              <path id="circle6"
+                d="M739.5 231.5C771 355 669.5 484 567.5 541C473.379 593.597 175 684.5 69 574.5C-13.3911 489 -11.5001 340.5 22.4999 231.5C52.4448 135.5 110.375 50.6387 209.5 20C292 -5.50008 425.5 -5.81064 521 20C576.5 34.9999 704.302 93.4998 739.5 231.5Z"
+                fill="#FDEBED" />
+            </svg>
 
+            <div class="m_logo">
+              <img src="./common/img/main/m_logo.png" alt="M">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 광고배너 -->
+    <div class="adbn">
+      <div class="adbn_inner inner">
+        <div class="slideList">
+          <div class="slideCont">
+            <a href="https://www.zlzl.co.kr/" target="_blank">
+              <div class="txt_wrap">
+                <span>Gamification 금융 교육 플랫폼 ZLZL App 런칭</span>
+              </div>
+              <div class="img_wrap">
+                <img src="//img.x1.co.kr/emoney/ill_main/slide_mobile3.png" alt="ZLZL">
+                <!--<img class="right_arrow" src="//img.x1.co.kr/emoney/ill_main/right_arrow_btn.png" alt="오른쪽">-->
+              </div>
+            </a>
+          </div>
+          <div class="slideCont">
+            <a href="https://play.google.com/store/apps/details?id=kr.co.robostock.mksignal" target="_blank">
+              <div class="txt_wrap">
+                <span>세상에 없던 고품격 AI 투자정보제공서비스 MK시그널 App 런칭</span>
+              </div>
+              <div class="img_wrap">
+                <img src="//img.x1.co.kr/emoney/ill_main/slide_mobile5.png" alt="MK시그널">
+                <!--<img class="right_arrow" src="//img.x1.co.kr/emoney/ill_main/right_arrow_btn.png" alt="오른쪽">-->
+              </div>
+            </a>
+          </div>
+          <div class="slideCont">
+            <a href="https://www.youtube.com/channel/UCFFgB2HEFbTD6Vmm503vzqQ" target="_blank">
+              <div class="txt_wrap">
+                <span>YouTube 채널 ‘주주랜드’ 런칭</span>
+              </div>
+              <div class="img_wrap">
+                <img src="//img.x1.co.kr/emoney/ill_main/slide_mobile4.png" alt="주주랜드">
+                <!--<img class="right_arrow" src="//img.x1.co.kr/emoney/ill_main/right_arrow_btn.png" alt="오른쪽">-->
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- cont -->
+    <div class="cont">
+      <!-- 이머니 정보 -->
+      <div class="em_info">
+        <div class="em_info_bg">
+          <div class="em_info_inner inner">
+            <div class="txt_wrap">
+              <span><b>eMoney</b>는</span>
+              신뢰할 수 있는 콘텐츠와 시스템으로<br>
+              고객에게 최고의 투자정보 플랫폼을<br>
+              제공합니다.
+              <div class="hashtag clearfix">
+                <span>#고객</span>
+                <span>#신뢰</span>
+                <span>#정보</span>
+                <span>#기술</span>
+                <span>#시스템</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 지도부분 -->
+      <div class="em_location inner">
+        <h1>Location</h1>
+        <span><img src="//img.x1.co.kr/emoney/ill_main/location_point.png" alt="이미지">서울특별시 마포구 독막로 311 재화스퀘어 11층
+          eMoney</span>
+        <span><img src="//img.x1.co.kr/emoney/ill_main/location_subway.png" alt="이미지">지하철 공덕역 1번 출구 8분거리</span>
+        <div id="daumRoughmapContainer1611288939842" class="root_daum_roughmap root_daum_roughmap_landing kakaoMap">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- footer -->
+  <footer html-include="./common/html/footer.html"></footer>
+  <!-- top 버튼 -->
+  <div class="top_btn">
+    <a href="#"></a>
+  </div>
 </body>
 
 </html>

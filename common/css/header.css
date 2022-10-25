@@ -55,6 +55,21 @@ header .header_wrap nav .header_menu li.menu{width: 70px; height: 70px;}
 	header .header_wrap nav .m_menu li .menu_btn .open1{position: absolute; top: 50%; -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%); width: 100%; height: 3px; background: #000; border-radius: 2px;}
 	header .header_wrap nav .m_menu li .menu_btn .open2{position: absolute; top: 8%; width: 100%; height: 3px; background: #000; border-radius: 2px;}
 	header .header_wrap nav .m_menu li .menu_btn .open3{position: absolute; bottom: 8%; width: 100%; height: 3px; background: #000; border-radius: 2px;}
+
+  /* 모바일 메뉴 */
+	aside.mobile_menu{display: block; position: fixed; top: 0; right: -100%; width: 100%; height: 100%; /*min-height: 800px;*/ z-index: 9999;  transition: none; transition: all .7s cubic-bezier(0, 0.21, 0.03, 1.01);}
+	aside.mobile_menu .dim{background: rgba(255, 255, 255, 0.6); display: none;}
+	aside.mobile_menu .menu_cont_wrap{position: absolute; top: 0; right: -100%; width: 80%; height: 100%; background: #fff; padding: 0 5vw;}
+	aside.mobile_menu .menu_cont_wrap .header{position: relative; padding: 3vw 0; font-size: 4vw; border-bottom: 3px solid #000; color: #000; font-weight: 500;}
+	aside.mobile_menu .menu_cont_wrap .header .close_btn_wrap{position: absolute; right: 0; top: 50%; transform: translateY(-50%); width: 4vw; height: 4vw;}
+	aside .close_btn_wrap .close_btn1{position: absolute; right: 0; top: 50%; margin-top: -1px; width: 4vw; height: 3px; background: #000; border-radius: 2px; transform: rotate(45deg);}
+	aside .close_btn_wrap .close_btn2{position: absolute; right: 0%; top: 50%; margin-top: -1px; width: 4vw; height: 3px; background: #000; border-radius: 2px; transform: rotate(-45deg);}
+	aside.mobile_menu .menu_cont_wrap .category{position: relative; width: 100%; height: 100%; overflow-y: auto; padding-top: 5vw;}
+	aside.mobile_menu .menu_cont_wrap .category ul.menu_list > li{font-size: 4vw; font-weight: bold; margin-bottom: 6vw; color: #000;}
+	aside.mobile_menu .menu_cont_wrap .category ul li .sub_menu{width: 100%; height: auto; margin-top: 2vw; padding-left: 4vw;}
+	aside.mobile_menu .menu_cont_wrap .category ul li .sub_menu li{width: 100%; height: 8vw; line-height: 8vw; font-size: 3vw;}
+	aside.mobile_menu .menu_cont_wrap .category ul li .sub_menu li a{position: relative; display: block; width: 100%; height: 100%;}
+	aside.mobile_menu .menu_cont_wrap .category ul li .sub_menu li span{position: absolute; top: 50%; right: 0; margin-top: -1.5vw; width: 2vw; height: 3vw; background: url(../img/ill_recruit/process_arrow.png) center no-repeat; background-size: contain;}
 }
 
 /* 모바일 */
@@ -74,4 +89,19 @@ header .header_wrap nav .header_menu li.menu{width: 70px; height: 70px;}
 	header .header_wrap nav .m_menu li .menu_btn .open1{position: absolute; top: 50%; -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%); width: 100%; height: 2px; background: #000; border-radius: 2px;}
 	header .header_wrap nav .m_menu li .menu_btn .open2{position: absolute; top: 8%; width: 100%; height: 2px; background: #000; border-radius: 2px;}
 	header .header_wrap nav .m_menu li .menu_btn .open3{position: absolute; bottom: 8%; width: 100%; height: 2px; background: #000; border-radius: 2px;}
+
+  /* 모바일 메뉴 */
+	aside.mobile_menu{display: block; position: fixed; top: 0; right: -100%; width: 100%; height: 100%; z-index: 9999;  transition: none;}
+	aside.mobile_menu .dim{background: rgba(255, 255, 255, 0.8); display: none;}
+	aside.mobile_menu .menu_cont_wrap{position: absolute; top: 0; right: -100%; width: 60%; height: 100%; background: #fff; padding: 5vw; transition: all .7s cubic-bezier(0, 0.21, 0.03, 1.01);}
+	aside.mobile_menu .menu_cont_wrap .header{position: relative; padding: 3vw 0; font-size: 5vw; border-bottom: 3px solid #000; color: #000; font-weight: 500;}
+	aside.mobile_menu .menu_cont_wrap .header .close_btn_wrap{position: absolute; right: 0; top: 50%; transform: translateY(-50%); width: 4vw; height: 4vw;}
+	aside .close_btn_wrap .close_btn1{position: absolute; right: 0; top: 50%; margin-top: -1px; width: 4vw; height: 3px; background: #000; border-radius: 2px; transform: rotate(45deg);}
+	aside .close_btn_wrap .close_btn2{position: absolute; right: 0%; top: 50%; margin-top: -1px; width: 4vw; height: 3px; background: #000; border-radius: 2px; transform: rotate(-45deg);}
+	aside.mobile_menu .menu_cont_wrap .category{position: relative; width: 100%; height: 100%; overflow-y: auto; padding-top: 5vw;}
+	aside.mobile_menu .menu_cont_wrap .category ul.menu_list > li{font-size: 5vw; font-weight: bold; margin-bottom: 6vw; color: #000;}
+	aside.mobile_menu .menu_cont_wrap .category ul li .sub_menu{width: 100%; height: auto; margin-top: 6vw; padding-left: 4vw;}
+	aside.mobile_menu .menu_cont_wrap .category ul li .sub_menu li{width: 100%; height: 11vw; line-height: 11vw; font-size: 4vw;}
+	aside.mobile_menu .menu_cont_wrap .category ul li .sub_menu li a{position: relative; display: block; width: 100%; height: 100%;}
+	aside.mobile_menu .menu_cont_wrap .category ul li .sub_menu li span{position: absolute; top: 50%; right: 0; margin-top: -1.5vw; width: 2vw; height: 3vw; background: url(../img/ill_recruit/process_arrow.png) center no-repeat; background-size: contain;}
 }

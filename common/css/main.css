@@ -3,17 +3,17 @@
 /* ==================================== main ==================================== */
 /* 메인 */
 .main {position: relative; width: 100%; height: 900px;}
-.main .bn_wrap {position: relative; width: 100%; height: 100%;}
-.main .bn_wrap .txt_wrap {position: relative; width: 55%; height: 100%; float: left;}
+.main .bn_wrap {position: relative; width: 100%; height: 100%; display: flex;}
+.main .bn_wrap .txt_wrap {position: relative; width: 55%; height: 100%;}
 .main .bn_wrap .txt_wrap .txt_inner{font-family: 'S-CoreDream-5Medium';position: absolute;top: 25%;left: 10%;width: 60%;height: 50%;font-size: 36px;letter-spacing: -0.09em;}
 .main .bn_wrap .txt_wrap .txt_inner p{font-family: 'GmarketSansBold'; font-size: 60px; letter-spacing: -0.09em; line-height: 1.1; margin-top: 20px;}
 .main_menu{position: relative;width: 100%;padding: 80px 0 0px;}
-.main_menu ul{width: 100%;}
-.main_menu ul li{position: relative; float: left; width: 45%; height: 40px; text-align: center; border: 1px solid #ccc; line-height: 40px; border-radius: 40px; background: #fff; color: #ccc; transition: all .2s ease-in-out; box-sizing: border-box; font-size: 18px; letter-spacing: 0em;}
-.main_menu ul li.on{border: 2px solid #000; color: #000; z-index: 88; line-height: 38px;}
-.main_menu ul li a{display: block;}
+.main_menu ul{width: 100%; display: flex; justify-content: flex-start;}
+.main_menu ul li{position: relative; width: 45%; height: 40px; text-align: center; border: 1px solid #ccc; border-radius: 40px; background: #fff; color: #ccc; transition: all .2s ease-in-out; box-sizing: border-box; font-size: 18px; letter-spacing: 0em;}
+.main_menu ul li.on{border: 2px solid #000; color: #000; z-index: 88;}
+.main_menu ul li a{display: flex; align-items: center; justify-content: center; width: 100%; height: 100%;}
 .main_menu ul li:last-child{position: relative; left: -9%;}
-.main .bn_wrap .svg_wrap { position: relative; width: 45%; height: 100%; float: left;}
+.main .bn_wrap .svg_wrap { position: relative; width: 45%; height: 100%;}
 .main .bn_wrap .svg_wrap .svg_inner {position: absolute; top: 25%; left: 35px; width: 90%; height: 50%; transition: all .9s cubic-bezier(0.1, 0.21, 0.03, 1.01);}
 .main .bn_wrap .svg_wrap .svg_inner svg {width: 100%; overflow: visible; position: absolute;}
 .main .bn_wrap .svg_wrap .svg_inner svg#svg1{z-index: 33;}
@@ -29,7 +29,7 @@
 .adbn .adbn_inner {height: 100px;}
 .adbn .adbn_inner .slideList,
 .adbn .adbn_inner .slideList .slideCont {position: relative; width: 100%; height: 100%; display: block;}
-.adbn .adbn_inner .slideList .slideCont a {display: -webkit-box;display: -ms-flexbox;display: flex; width: 100%; height: 100%;}
+.adbn .adbn_inner .slideList .slideCont a {display: -webkit-box; display: -ms-flexbox; display: flex; width: 100%; height: 100%;}
 .adbn .adbn_inner .slideList .slideCont a .txt_wrap {width: 60%; height: 80%; color: #fff; font-size: 22px; text-align: left; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center;}
 /*.adbn .adbn_inner .slideList .slideCont a .txt_wrap span{padding-right: 85px;}*/
 .adbn .adbn_inner .slideList .slideCont a .img_wrap {position: relative; width: 40%; height: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: end; -ms-flex-pack: end; justify-content: flex-end; -ms-flex-item-align: end; align-self: flex-end;}
@@ -43,8 +43,8 @@
 .cont .em_info .em_info_bg .em_info_inner .txt_wrap {position: absolute; top: 50%; transform: translateY(-50%); color: #fff; letter-spacing: -0.06em; font-size: 36px; line-height: 1.2; font-weight: 300;}
 .cont .em_info .em_info_bg .em_info_inner .txt_wrap > span {display: block; margin-bottom: 20px; font-weight: bold; font-size: 40px;}
 .cont .em_info .em_info_bg .em_info_inner .txt_wrap > span b{font-weight: bold; font-size: 60px; padding-right: 10px;}
-.cont .em_info .em_info_bg .em_info_inner .txt_wrap .hashtag{display: block; margin-top: 80px;}
-.hashtag span{float: left; font-size: 20px; margin-right: 10px; letter-spacing: 0.01em; font-weight: 300;}
+.cont .em_info .em_info_bg .em_info_inner .txt_wrap .hashtag{display: flex; justify-content: flex-start; margin-top: 80px;}
+.hashtag span{font-size: 20px; margin-right: 10px; letter-spacing: 0.01em; font-weight: 300;}
 
 /* 이머니 지도 */
 .cont .em_location{width: 100%; margin-top: 100px; overflow: hidden;}
@@ -57,7 +57,7 @@
 /* banner */
 .adbn .adbn_inner .slideList .slick-list,
 .adbn .adbn_inner .slideList .slick-list .slick-track {height: 100%;}
-.adbn .adbn_inner .slideList .slick-dots {position: absolute;left: 10px;bottom: 10px;width: 50%;font-size: 0;}
+.adbn .adbn_inner .slideList .slick-dots {position: absolute; left: 10px; bottom: 10px; width: 50%; font-size: 0; text-align: left;}
 .adbn .adbn_inner .slideList .slick-dots li{display: inline-block;}
 .adbn .adbn_inner .slideList .slick-dots li + li{margin-left: 40px;}
 .adbn .adbn_inner .slideList .slick-dots li button{position:relative; text-indent: -9999px; width: 6px; height: 6px; border-radius: 5px; transition: all .3s ease; cursor: pointer; background: #fff;}
@@ -593,31 +593,6 @@ span.kosdac{position: absolute; top: 50%; transform: translateY(-50%); width: 10
 	/* top btn */
 	.top_btn{width: 6vw; height: 6vw; max-width: 50px; max-height: 50px;}
 	.top_btn a{height: 100%;}
-	/* footer */
-	footer{height: 23vw;}
-	footer .footer_inner{padding: 4vw 0;}
-	footer .footer_inner h1{padding-bottom: 0; width: 13vw; height: 5vw;}
-	footer .footer_inner address{padding: 1vw 0; font-size: 1.8vw;}
-	footer .footer_inner address span{padding: 0 0.5vw;}
-	footer .footer_inner address span + span::after{height: 1.5vw;}
-	footer .footer_inner address span.tablet{display: block;}
-	footer .footer_inner address span.tablet::after{content: unset;}
-	footer .footer_inner p.copy{font-size: 1.5vw; margin-top: 2vw;}
-
-	/* 모바일 메뉴 */
-	aside.mobile_menu{display: block; position: fixed; top: 0; right: -100%; width: 100%; height: 100%; /*min-height: 800px;*/ z-index: 9999;  transition: none; transition: all .7s cubic-bezier(0, 0.21, 0.03, 1.01);}
-	aside.mobile_menu .dim{background: rgba(255, 255, 255, 0.6); display: none;}
-	aside.mobile_menu .menu_cont_wrap{position: absolute; top: 0; right: -100%; width: 80%; height: 100%; background: #fff; padding: 0 5vw;}
-	aside.mobile_menu .menu_cont_wrap .header{position: relative; padding: 3vw 0; font-size: 4vw; border-bottom: 3px solid #000; color: #000; font-weight: 500;}
-	aside.mobile_menu .menu_cont_wrap .header .close_btn_wrap{position: absolute; right: 0; top: 50%; transform: translateY(-50%); width: 4vw; height: 4vw;}
-	aside .close_btn_wrap .close_btn1{position: absolute; right: 0; top: 50%; margin-top: -1px; width: 4vw; height: 3px; background: #000; border-radius: 2px; transform: rotate(45deg);}
-	aside .close_btn_wrap .close_btn2{position: absolute; right: 0%; top: 50%; margin-top: -1px; width: 4vw; height: 3px; background: #000; border-radius: 2px; transform: rotate(-45deg);}
-	aside.mobile_menu .menu_cont_wrap .category{position: relative; width: 100%; height: 100%; overflow-y: auto; padding-top: 5vw;}
-	aside.mobile_menu .menu_cont_wrap .category ul.menu_list > li{font-size: 4vw; font-weight: bold; margin-bottom: 6vw; color: #000;}
-	aside.mobile_menu .menu_cont_wrap .category ul li .sub_menu{width: 100%; height: auto; margin-top: 2vw; padding-left: 4vw;}
-	aside.mobile_menu .menu_cont_wrap .category ul li .sub_menu li{width: 100%; height: 8vw; line-height: 8vw; font-size: 3vw;}
-	aside.mobile_menu .menu_cont_wrap .category ul li .sub_menu li a{position: relative; display: block; width: 100%; height: 100%;}
-	aside.mobile_menu .menu_cont_wrap .category ul li .sub_menu li span{position: absolute; top: 50%; right: 0; margin-top: -1.5vw; width: 2vw; height: 3vw; background: url(../img/ill_recruit/process_arrow.png) center no-repeat; background-size: contain;}
 
 	/* ================================== 메인 ================================== */
 	.main .bn_wrap{overflow: visible;}
@@ -638,6 +613,7 @@ span.kosdac{position: absolute; top: 50%; transform: translateY(-50%); width: 10
 	.adbn .adbn_inner .slideList .slideCont a .img_wrap img {margin-right:0}
 	.adbn .adbn_inner .slideList .slideCont a .img_wrap img.right_arrow{display: none;}
 	.adbn .adbn_inner .slideList .slick-dots{left: 1vw; bottom: 1vw;}
+	.adbn .adbn_inner .slideList .slick-dots li + li{margin-left: 30px;}
 	/* emoney info */
 	.cont .em_info{height: 100vw;}
 	.cont .em_info .em_info_bg .em_info_inner .txt_wrap{font-size: 4vw;}
@@ -966,52 +942,6 @@ span.kosdac{position: absolute; top: 50%; transform: translateY(-50%); width: 10
 	/* top btn */
 	.top_btn{width: 10vw; height: 10vw; min-width: 35px; min-height: 35px; border-radius:50%;}
 	.top_btn a{height: 100%;}
-	/* footer */
-	footer{height: 30vw; background: #f2f4f4; margin-top: 0;}
-	footer .footer_border{position:absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: 100%; height: auto;}
-	footer .footer_inner{border-top: none; padding-top: 0; color: #6a6a6a; width: 100%; word-break: keep-all;}
-	footer .footer_inner h1{display: none;}
-	footer .footer_inner address{padding: 1vw 0; font-size: 3.2vw; text-align: center; font-weight: normal; width: 100%;}
-	footer .footer_inner address span{display: inline-block;padding: 0 2vw;margin-bottom: 0.6vw;letter-spacing: -0.1vw;}
-	footer .footer_inner address span.mobile_chk{display: inline-block;}
-	footer .footer_inner address span.mobile_chk::after{content: unset;}
-	footer .footer_inner address span + span::after{height: 3.4vw;}
-	footer .footer_inner address span.m_first::after{content: unset;}
-	footer .footer_inner p.copy{display: none;}
-	footer .footer_inner address .pc_br{display: block;}
-	footer .footer_inner address .m_br{display: block;font-size: 3.4vw; margin-bottom: 2vw;}
-	footer .footer_inner address span.m_barnot::after{content: none;}
-
-	/* 모바일 메뉴 */
-	aside.mobile_menu{display: block; position: fixed; top: 0; right: -100%; width: 100%; height: 100%; z-index: 9999;  transition: none;}
-	aside.mobile_menu .dim{background: rgba(255, 255, 255, 0.8); display: none;}
-	aside.mobile_menu .menu_cont_wrap{position: absolute; top: 0; right: -100%; width: 60%; height: 100%; background: #fff; padding: 5vw; transition: all .7s cubic-bezier(0, 0.21, 0.03, 1.01);}
-	aside.mobile_menu .menu_cont_wrap .header{position: relative; padding: 3vw 0; font-size: 5vw; border-bottom: 3px solid #000; color: #000; font-weight: 500;}
-	aside.mobile_menu .menu_cont_wrap .header .close_btn_wrap{position: absolute; right: 0; top: 50%; transform: translateY(-50%); width: 4vw; height: 4vw;}
-	aside .close_btn_wrap .close_btn1{position: absolute; right: 0; top: 50%; margin-top: -1px; width: 4vw; height: 3px; background: #000; border-radius: 2px; transform: rotate(45deg);}
-	aside .close_btn_wrap .close_btn2{position: absolute; right: 0%; top: 50%; margin-top: -1px; width: 4vw; height: 3px; background: #000; border-radius: 2px; transform: rotate(-45deg);}
-	aside.mobile_menu .menu_cont_wrap .category{position: relative; width: 100%; height: 100%; overflow-y: auto; padding-top: 5vw;}
-	aside.mobile_menu .menu_cont_wrap .category ul.menu_list > li{font-size: 5vw; font-weight: bold; margin-bottom: 6vw; color: #000;}
-	aside.mobile_menu .menu_cont_wrap .category ul li .sub_menu{width: 100%; height: auto; margin-top: 6vw; padding-left: 4vw;}
-	aside.mobile_menu .menu_cont_wrap .category ul li .sub_menu li{width: 100%; height: 11vw; line-height: 11vw; font-size: 4vw;}
-	aside.mobile_menu .menu_cont_wrap .category ul li .sub_menu li a{position: relative; display: block; width: 100%; height: 100%;}
-	aside.mobile_menu .menu_cont_wrap .category ul li .sub_menu li span{position: absolute; top: 50%; right: 0; margin-top: -1.5vw; width: 2vw; height: 3vw; background: url(//img.x1.co.kr/emoney/ill_recruit/process_arrow.png) center no-repeat; background-size: contain;}
-
-	/* header */
-	/* header{background: #fff; height: 14vw;}
-	header.scrolled{border-bottom: none;}
-	header.scrolled .header_wrap .logo a {width:70px}
-	header .header_wrap{height: 8vw; margin: 3vw 0;}
-	header .header_wrap .logo{left: 5%; transition: all .9s cubic-bezier(0.1, 0.21, 0.03, 1.01);}
-	header .header_wrap .logo a{background: url(//img.x1.co.kr/emoney/common/logo_emoney.png) center no-repeat; background-size: contain; width:70px }
-	header .header_wrap nav .header_menu{display: none;}
-	header .header_wrap nav{width: 10vw; height: 100%; right: 2vw;}
-	header .header_wrap nav .m_menu{display: block; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 5vw; height: 5vw;}
-	header .header_wrap nav .m_menu li{width: 100%; height: 100%;}
-	header .header_wrap nav .m_menu li .menu_btn{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 100%; height: 100%;}
-	header .header_wrap nav .m_menu li .menu_btn .open1{position: absolute; top: 50%; transform: translateY(-50%); width: 100%; height: 2px; background: #000; border-radius: 2px;}
-	header .header_wrap nav .m_menu li .menu_btn .open2{position: absolute; top: 8%; width: 100%; height: 2px; background: #000; border-radius: 2px;}
-	header .header_wrap nav .m_menu li .menu_btn .open3{position: absolute; bottom: 8%; width: 100%; height: 2px; background: #000; border-radius: 2px;} */
 
 	/* ================================== 메인 ================================== */
 	.main .bn_wrap .txt_wrap{width: 100%; float: unset;}
@@ -1021,8 +951,8 @@ span.kosdac{position: absolute; top: 50%; transform: translateY(-50%); width: 10
 	.main .bn_wrap .txt_wrap .txt_inner img{position: relative; top: 20%; left: 5%; width: 55%;}
 	.main .bn_wrap .txt_wrap .txt_inner .main_menu{position: absolute;left: 57%;bottom: 3.5%;transform: translateX(-50%);padding: 5vw 0 0;z-index: 100;}
 	.main .bn_wrap .txt_wrap .txt_inner .main_menu ul{width: 95%;}
-	.main .bn_wrap .txt_wrap .txt_inner .main_menu ul li{font-size: 4.5vw; height: 10vw; line-height: 10vw; width: 45%;}
-	.main .bn_wrap .txt_wrap .txt_inner .main_menu ul li.on{line-height: 9.5vw;}
+	.main .bn_wrap .txt_wrap .txt_inner .main_menu ul li{font-size: 4.5vw; height: 10vw; width: 45%;}
+	.main .bn_wrap .txt_wrap .txt_inner .main_menu ul li.on{}
 	.main .bn_wrap .svg_wrap{position: absolute; bottom: -5%; right: 0%; width: 100%; height: 100%; float: unset;}
 	.main .bn_wrap .svg_wrap .svg_inner{width: 50%; top: unset; bottom: 13%; left: unset; right: -6%; height: 40%;}
 	/* 배너 슬라이드 */
