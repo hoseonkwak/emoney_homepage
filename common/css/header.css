@@ -5,9 +5,9 @@ header .header_wrap {position: relative; max-width: 1200px; width: 100%; height:
 header .header_wrap .logo{position: relative;	width: 87px; height: 50px;}
 header .header_wrap .logo a{display: block; width: 100%; height: 100%; background: url(../img/ci/contents&service/emoney.png) center no-repeat; background-size: contain;}
 header .header_wrap nav .header_menu{display: -webkit-box;display: -ms-flexbox;display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center;}
-header .header_wrap nav .header_menu li{position: relative; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; font-size: 16px; text-align: center; width: 130px;}
+header .header_wrap nav .header_menu li{position: relative; font-size: 16px; text-align: center; width: 130px;}
 header .header_wrap nav .header_menu li.depth1{position: relative; text-align: center; width: 130px; height: 70px; font-weight: bold;}
-header .header_wrap nav .header_menu li.depth1 > a{display:block;}
+header .header_wrap nav .header_menu li.depth1 > a{display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; width: 100%; height: 100%;}
 header .header_wrap nav .header_menu > li.depth1 > a::after{content: ''; position: absolute; left: 0; bottom: 0; height: 3px; width: 0; opacity: 0; background-color: #a9071b; -webkit-transition: all .3s ease-in-out; -o-transition: all .3s ease-in-out; transition: all .3s ease-in-out;}
 header .header_wrap nav .header_menu > li.depth1 > a:hover:after{width: 100%; opacity: 1;}
 header .header_wrap nav .header_menu li.depth1 .depth2_bg{position: absolute; height: 120px; top: 70px; left: 0; right: 0; background-color: #fff; padding-bottom: 40px; display: none;	-webkit-transition: .3s ease-in-out;	-o-transition: .3s ease-in-out;	transition: .3s ease-in-out;}
@@ -21,7 +21,7 @@ header .depth2_bg >.depth2::before{content: ''; position: absolute;	left: -397%;
 header .depth2_bg >.depth2::after{content: ''; position: absolute; right: -300%; top: 0; width: 400%; height: 120px; background: #fff; border-top: 1px solid #eee; z-index: -1; -webkit-box-shadow: 0px 3px 4px -4px grey; box-shadow: 0px 3px 4px -4px grey;}
 header .depth2_bg .depth2 li .depth2_list{display: -webkit-box;display: -ms-flexbox;display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column;}
 header .depth2_bg .depth2 li .depth2_list > li{height: 50px; padding: 0; font-weight: 400; position: relative;}
-header .depth2_bg .depth2 li .depth2_list > li > a{display: block; }
+header .depth2_bg .depth2 li .depth2_list > li > a{display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; width: 100%; height: 100%;}
 /* header .depth2_bg .depth2 li .depth2_list > li >a:hover:after{content: ''; display: block; width: 10px; height: 3px; background: #a9071b; position: absolute; left: 50%; top: 40px; transform: translateX(-50%); border-radius: 100%; z-index: 9999; } */
 header .depth2_bg .depth2 li .depth2_list > li >a:hover{color: #a9071b;}
 
@@ -57,9 +57,9 @@ header .header_wrap nav .header_menu li.menu{width: 70px; height: 70px;}
 	header .header_wrap nav .m_menu li .menu_btn .open3{position: absolute; bottom: 8%; width: 100%; height: 3px; background: #000; border-radius: 2px;}
 
   /* 모바일 메뉴 */
-	aside.mobile_menu{display: block; position: fixed; top: 0; right: -100%; width: 100%; height: 100%; /*min-height: 800px;*/ z-index: 9999;  transition: none; transition: all .7s cubic-bezier(0, 0.21, 0.03, 1.01);}
+	aside.mobile_menu{display: block; position: fixed; top: 0; right: -100%; width: 100%; height: 100%; /*min-height: 800px;*/ z-index: 9999;  transition: none;}
 	aside.mobile_menu .dim{background: rgba(255, 255, 255, 0.6); display: none;}
-	aside.mobile_menu .menu_cont_wrap{position: absolute; top: 0; right: -100%; width: 80%; height: 100%; background: #fff; padding: 0 5vw;}
+	aside.mobile_menu .menu_cont_wrap{position: absolute; top: 0; right: -100%; width: 80%; height: 100%; background: #fff; padding: 0 5vw; transition: all .7s cubic-bezier(0, 0.21, 0.03, 1.01);}
 	aside.mobile_menu .menu_cont_wrap .header{position: relative; padding: 3vw 0; font-size: 4vw; border-bottom: 3px solid #000; color: #000; font-weight: 500;}
 	aside.mobile_menu .menu_cont_wrap .header .close_btn_wrap{position: absolute; right: 0; top: 50%; transform: translateY(-50%); width: 4vw; height: 4vw;}
 	aside .close_btn_wrap .close_btn1{position: absolute; right: 0; top: 50%; margin-top: -1px; width: 4vw; height: 3px; background: #000; border-radius: 2px; transform: rotate(45deg);}

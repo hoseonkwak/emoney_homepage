@@ -101,7 +101,7 @@ $(window).on("load", function () {
   $(".adbn_inner .slideList").slick({
     dots: true,
     arrow: false,
-    autoplay: true,
+    autoplay: false,
   });
 
   // 카카오지도
