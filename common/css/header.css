@@ -46,7 +46,7 @@ header .header_wrap nav .header_menu li.menu{width: 70px; height: 70px;}
 	/* header.scrolled{border-bottom: none;} */
 	header .header_wrap{height: 100%;}
 	header .header_wrap .logo{left: 4%; -webkit-transition: all .9s cubic-bezier(0.1, 0.21, 0.03, 1.01); -o-transition: all .9s cubic-bezier(0.1, 0.21, 0.03, 1.01); transition: all .9s cubic-bezier(0.1, 0.21, 0.03, 1.01);}
-	header .header_wrap .logo a{background: url(../img/ci/contents&service/emoney.png) center no-repeat; background-size: contain;}
+	header .header_wrap .logo a{background: url(../img/main/logo_emoney.png) center no-repeat; background-size: contain;}
 	header .header_wrap nav .header_menu{display: none;}
 	header .header_wrap nav{position: relative; width: 8vw; height: 100%;}
 	header .header_wrap nav .m_menu{display: block; position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); width: 3vw; height: 3vw;}
