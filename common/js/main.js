@@ -101,7 +101,7 @@ $(window).on("load", function () {
   $(".adbn_inner .slideList").slick({
     dots: true,
     arrow: false,
-    autoplay: false,
+    autoplay: true,
   });
 
   // 카카오지도
@@ -119,9 +119,7 @@ $(window).on("load", function () {
 
   $win.scroll(function () {
     var scroll = $win.scrollTop(); //현재 스크롤 위치
-    var eminfotxt = $(
-      ".cont .em_info .em_info_bg .em_info_inner .txt_wrap"
-    ).offset().top;
+    var eminfotxt = $(".cont .em_info .em_info_bg .em_info_inner .txt_wrap").offset().top;
 
     if (scroll > eminfotxt) {
       $(".cont .em_location h1").css("left", "0");
