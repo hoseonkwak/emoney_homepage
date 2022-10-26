@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>eMoney</title>
+  <!-- <link rel="icon" type="image/ico" href="//img.x1.co.kr/favicon/emoney.ico"> -->
+
+  <!-- jQuery -->
+  <script src="//code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script src='//cdnjs.cloudflare.com/ajax/libs/snap.svg/0.5.0/snap.svg-min.js'></script>
+
+  <!-- script -->
+  <script src="./common/js/header_w.js"></script>
+  <script src="./common/js/include_html.js"></script>
+  <script defer src="./common/js/welfare.js"></script>
+
+  <!-- slick -->
+  <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
+  <!-- Swiper JS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+  <!-- 카카오지도 -->
+  <script charset="UTF-8" class="daum_roughmap_loader_script"
+    src="//ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+
+  <!-- css -->
+  <link rel="stylesheet" href="./common/css/header_w.css">
+  <link rel="stylesheet" href="./common/css/set.css">
+  <link rel="stylesheet" href="./common/css/footer.css">
+  <link rel="stylesheet" href="./common/css/main.css">
+
+  <!--  웹 폰트 아이콘 라이브러리 -->
+  <link rel='stylesheet' href='//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' />
+  <style>
+    @font-face {
+      font-family: 'S-CoreDream-5Medium';
+      src: url('//cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-5Medium.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'GmarketSansBold';
+      src: url('//cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- 헤더 -->
+  <header html-include="./common/html/header.html"></header>
+  <!-- nav -->
+  <div class="m_nav welfare">
+    <ul class="clearfix">
+      <li class="on">복리후생</li>
+      <li>베스트복지</li>
+      <li>복지사전</li>
+    </ul>
+  </div>
+  <!-- wrap -->
+  <div class="wrap">
+    <!-- main -->
+    <div class="welfare_cont">
+      <div class="inner">
+        <div class="title inner">
+          <div class="img_wrap inner">
+            <img src="./common/img/ill_welfare/humans.png" alt="humans">
+          </div>
+          <span>HOME > RECRUIT > 복리후생</span>
+          <h1>복리후생</h1>
+          <h3>직원들의 성장을 위하여<br>이머니에서 다양한 복지제도를 운영하고 있습니다</h3>
+        </div>
+      </div>
+    </div>
+    <!-- 베스트 복리후생 -->
+    <div class="best_welfare">
+      <div class="inner">
+        <div class="welfare_list">
+          <ul>
+            <li class="on">20대 현직원의 Best3</li>
+            <li>전 직원 Best3</li>
+          </ul>
+        </div>
+        <div class="welfare_list_cont on">
+          <ul>
+            <li>
+              <div class="img_wrap">
+                <img src="./common/img/ill_welfare/20best_welfare1.png" alt="20best">
+              </div>
+              <h3 class="mb10">엔터테이먼트 활동<br>
+                <span>(야구/영화)</span>
+              </h3>
+
+              <p>
+                여가생활도 잘 즐겨야 힘이나죠!?<br>
+                상시로 여가활동 표를 제공해드립니다.
+              </p>
+            </li>
+            <li>
+              <div class="img_wrap">
+                <img src="./common/img/ill_welfare/20allbest_welfare2.png" alt="20best">
+              </div>
+              <h3>도서포인트 제공</h3>
+              <p>
+                보고싶은 책을 마음대로~!<br>
+                도서포인트를 팍팍 제공해드립니다.
+              </p>
+            </li>
+            <li>
+              <div class="img_wrap">
+                <img src="./common/img/ill_welfare/20best_welfare3.png" alt="20best">
+              </div>
+              <h3>생일선물</h3>
+              <p>
+                커피 기프트콘을<br>
+                선물로 드립니다.
+              </p>
+            </li>
+          </ul>
+        </div>
+        <div class="welfare_list_cont">
+          <ul class="clearfix">
+            <li>
+              <div class="img_wrap">
+                <img src="./common/img/ill_welfare/allbest_welfare1.png" alt="20best">
+              </div>
+              <h3>자유로운 연차 사용</h3>
+              <p>
+                쉬는 것도 중요해요!!<br>
+                연차를 마음 편하게 쓸 수 있습니다.
+              </p>
+            </li>
+            <li>
+              <div class="img_wrap">
+                <img src="./common/img/ill_welfare/20allbest_welfare2.png" alt="20best">
+              </div>
+              <h3>도서포인트 제공</h3>
+              <p>
+                보고싶은 책을 마음대로~!<br>
+                도서포인트를 팍팍 제공해드립니다.
+              </p>
+            </li>
+            <li>
+              <div class="img_wrap">
+                <img src="./common/img/ill_welfare/allbest_welfare3.png" alt="20best">
+              </div>
+              <h3>그룹사 연수원</h3>
+              <p>
+                공기좋은 남양주에 있는<br>
+                그룹사 임직원 연수원을 이용해보세요.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- 복지 -->
+    <div class="welfare_list inner">
+      <h1>이머니 복지 사전</h1>
+      <!-- 건강 -->
+      <div class="cont health">
+        <h2><span>건강</span></h2>
+        <ul class="welfare_detail">
+          <li>
+            <div class="img_wrap"></div>
+            <p>건강검진 지원<br>팍팍팍~!</p>
+          </li>
+          <li>
+            <div class="img_wrap"></div>
+            <p>점심시간의 여유<br>경의선 산책로</p>
+          </li>
+          <li>
+            <div class="img_wrap"></div>
+            <p>미세먼지 놉!<br>공기청정기</p>
+          </li>
+        </ul>
+      </div>
+      <!-- 자기개발 -->
+      <div class="cont self_devel">
+        <h2><span>자기개발</span></h2>
+        <ul class="welfare_detail">
+          <li>
+            <div class="img_wrap"></div>
+            <p>도서포인트</p>
+          </li>
+          <li>
+            <div class="img_wrap"></div>
+            <p>직무역량교육</p>
+          </li>
+          <li>
+            <div class="img_wrap"></div>
+            <p>전문서적 지원</p>
+          </li>
+          <li>
+            <div class="img_wrap"></div>
+            <p>자격증 취득 지원</p>
+          </li>
+        </ul>
+      </div>
+      <!-- 여가 -->
+      <div class="cont leisure">
+        <h2><span>여가</span></h2>
+        <ul class="welfare_detail">
+          <li>
+            <div class="img_wrap"></div>
+            <p>야구티켓(그룹사)</p>
+          </li>
+          <li>
+            <div class="img_wrap"></div>
+            <p>영화티켓(그룹사)</p>
+          </li>
+          <li>
+            <div class="img_wrap"></div>
+            <p>콘도 혜택가 제공</p>
+          </li>
+          <li>
+            <div class="img_wrap"></div>
+            <p>임직원 연수원 제공</p>
+          </li>
+        </ul>
+      </div>
+      <!-- 근무환경 -->
+      <div class="cont work_environment">
+        <h2><span>근무환경</span></h2>
+        <ul class="welfare_detail">
+          <li>
+            <div class="img_wrap"></div>
+            <p>꼰대 복장 No No!</p>
+          </li>
+          <li>
+            <div class="img_wrap"></div>
+            <p>자유로운 연차사용</p>
+          </li>
+          <li>
+            <div class="img_wrap"></div>
+            <p>듀얼모니터 지원</p>
+          </li>
+          <li>
+            <div class="img_wrap"></div>
+            <p>다양한<br>무제한 음료</p>
+          </li>
+          <li>
+            <div class="img_wrap"></div>
+            <p>전자레인지 &<br>발뮤다 더 토스터</p>
+          </li>
+          <li>
+            <div class="img_wrap"></div>
+            <p>계절을 잊는<br>천장 에어컨</p>
+          </li>
+        </ul>
+      </div>
+      <!-- 생활지원 -->
+      <div class="cont life_support">
+        <h2><span>생활지원</span></h2>
+        <ul class="welfare_detail">
+          <li>
+            <div class="img_wrap"></div>
+            <p>사내대출제도</p>
+          </li>
+          <li>
+            <div class="img_wrap"></div>
+            <p>명절 지원</p>
+          </li>
+          <li>
+            <div class="img_wrap"></div>
+            <p>생일선물<br>(기프티콘)</p>
+          </li>
+          <li>
+            <div class="img_wrap"></div>
+            <p>통신비 지원</p>
+          </li>
+          <li>
+            <div class="img_wrap"></div>
+            <p>경조사비 지원</p>
+          </li>
+          <li>
+            <div class="img_wrap"></div>
+            <p>야간교통비지급</p>
+          </li>
+        </ul>
+      </div>
+      <!-- 포상 -->
+      <div class="cont reward">
+        <h2><span>포상</span></h2>
+        <ul class="welfare_detail">
+          <li>
+            <div class="img_wrap"></div>
+            <p>우수사원</p>
+          </li>
+          <li>
+            <div class="img_wrap"></div>
+            <p>인센티브제</p>
+          </li>
+          <li>
+            <div class="img_wrap"></div>
+            <p>장기근속 (5년, 10년)</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- footer -->
+  <footer html-include="./common/html/footer.html"></footer>
+  <!-- top 버튼 -->
+  <div class="top_btn">
+    <a href="#"></a>
+  </div>
+</body>
+
+</html>
