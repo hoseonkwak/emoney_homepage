@@ -5,7 +5,7 @@ header {position: fixed; top: 0; left: 0; z-index: 9999; width: 100%; color: rgb
 header.scrolled {position: fixed; top: 0; left: 0; z-index: 9999; width: 100%; color: #000; border-bottom: 1px solid #eee;}
 header .header_wrap {position: relative; max-width: 1200px;	width: 100%; height: 70px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center;}
 header .header_wrap .logo{position: relative; width: 87px; height: 50px;}
-header .header_wrap .logo a{position: relative; display: block; width: 100%; height: 100%; background: url(//img.x1.co.kr/emoney/ill_about/logo_w.png) center no-repeat; background-size: contain;  transition: none;}
+header .header_wrap .logo a{position: relative; display: block; width: 100%; height: 100%; background: url(../img/main/logo_w.png) center no-repeat; background-size: contain;  transition: none;}
 /* header .header_wrap nav{position: absolute; bottom: 0; right: 0; transition: none;} */
 header .header_wrap nav .header_menu{transition: none; display: flex; align-items: center;}
 header .header_wrap nav .header_menu li{position: relative; font-size: 16px; text-align: center; width: 130px; transition: none;}
@@ -31,7 +31,7 @@ header .header_wrap nav .header_menu > li.depth1 > a:hover,
 header .header_wrap nav .header_menu li.menu > .menu_btn:hover{color: #fff;}
 header .header_wrap nav .header_menu li.depth1.open > a:hover,
 header .header_wrap nav .header_menu li.menu.open > .menu_btn:hover{color: #fff;}
-header.scrolled .header_wrap .logo a{position: relative; width: 87px; display: block; height: 50px; background: url(//img.x1.co.kr/emoney/common/logo_emoney.png) center no-repeat; background-size: contain;}
+header.scrolled .header_wrap .logo a{position: relative; width: 87px; display: block; height: 50px; background: url(../img/main/logo_emoney.png) center no-repeat; background-size: contain;}
 header.scrolled .depth2_bg >.depth2::before{content: ''; position: absolute; right: -100%; top: 0; width: 800%; height: 120px; background: #fff; border-top: 1px solid #eee; z-index: -1; border-bottom: 1px solid #ddd;}
 /*header.scrolled .depth2_bg >.depth2::after{content: ''; position: absolute; left: 0%; top: 0; width: 500%; height: 120px; background: #fff; border-top: 1px solid #eee; z-index: -1; border-bottom: 1px solid #ddd;}*/
 header.scrolled .depth2_bg .depth2 li .depth2_list > li >a:hover{color: #a9071b;}
@@ -62,7 +62,7 @@ header .header_wrap nav .header_menu li.menu.open .depth2_bg{display: block; tra
 	/* header.scrolled{border-bottom: none;} */
 	header .header_wrap{height: 100%;}
 	header .header_wrap .logo{left: 4%; -webkit-transition: all .9s cubic-bezier(0.1, 0.21, 0.03, 1.01); -o-transition: all .9s cubic-bezier(0.1, 0.21, 0.03, 1.01); transition: all .9s cubic-bezier(0.1, 0.21, 0.03, 1.01);}
-	header .header_wrap .logo a{background: url(../img/ci/contents&service/emoney.png) center no-repeat; background-size: contain;}
+	header .header_wrap .logo a{background: url(../img/main/logo_emoney.png) center no-repeat; background-size: contain;}
 	header .header_wrap nav .header_menu{display: none;}
 	header .header_wrap nav{position: relative; width: 8vw; height: 100%;}
 	header .header_wrap nav .m_menu{display: block; position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); width: 3vw; height: 3vw;}
@@ -96,7 +96,7 @@ header .header_wrap nav .header_menu li.menu.open .depth2_bg{display: block; tra
 	header.scrolled .header_wrap .logo a {width:70px}
 	header .header_wrap{height: 8vw; margin: 3vw 0;}
 	header .header_wrap .logo{left: 5%; -webkit-transition: all .9s cubic-bezier(0.1, 0.21, 0.03, 1.01); -o-transition: all .9s cubic-bezier(0.1, 0.21, 0.03, 1.01); transition: all .9s cubic-bezier(0.1, 0.21, 0.03, 1.01);}
-	header .header_wrap .logo a{background: url(../img/ci/contents&service/emoney.png) center no-repeat; background-size: contain; width:70px }
+	header .header_wrap .logo a{background: url(../img/main/logo_emoney.png) center no-repeat; background-size: contain; width:70px }
 	header .header_wrap nav .header_menu{display: none;}
 	header .header_wrap nav{position: relative; width: 10vw; height: 100%; right: 2vw;}
 	header .header_wrap nav .m_menu{display: block; position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); width: 5vw; height: 5vw;}

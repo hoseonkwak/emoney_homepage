@@ -3,7 +3,7 @@ aside.mobile_menu{display: none;}
 header {position: fixed; top: 0; left: 0; z-index: 9999; width: 100%; background: rgba(255,255,255,0.9);}
 header .header_wrap {position: relative; max-width: 1200px; width: 100%; height: 70px; margin: 0 auto; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center;}
 header .header_wrap .logo{position: relative;	width: 87px; height: 50px;}
-header .header_wrap .logo a{display: block; width: 100%; height: 100%; background: url(../img/ci/contents&service/emoney.png) center no-repeat; background-size: contain;}
+header .header_wrap .logo a{display: block; width: 100%; height: 100%; background: url(../img/main/logo_emoney.png) center no-repeat; background-size: contain;}
 header .header_wrap nav .header_menu{display: -webkit-box;display: -ms-flexbox;display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center;}
 header .header_wrap nav .header_menu li{position: relative; font-size: 16px; text-align: center; width: 130px;}
 header .header_wrap nav .header_menu li.depth1{position: relative; text-align: center; width: 130px; height: 70px; font-weight: bold;}
